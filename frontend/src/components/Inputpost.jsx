@@ -80,7 +80,7 @@ function Inputpost() {
         textareaRef.current.style.height = "auto";
         textareaRef.current.style.height = textareaRef.current.scrollHeight + 'px'
         // if ther is no text don't allow the user to post
-        if(val.length>0||visual.length>0)
+        if(val.trim().length>0||visual.length>0)
             { 
                 setDec("bg-sky-500 text-white cursor-pointer")
             }

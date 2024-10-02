@@ -2,6 +2,7 @@ import React from "react"
 import SideCards from "./SideCards"
 import Icons from "../HeroIcons/Icons"
 import check from '../assets/IMG-20240124-WA0000-removebg.png'
+import {NavLink} from 'react-router-dom'
 
 function SideBar()
 {
@@ -11,14 +12,17 @@ function SideBar()
             {/* X logo */}
            <div className="w-full h-[50px] flex justify-end bch:justify-start
             items-center"> 
-              <div className="hover:bg-gray-600/30  flex justify-center items-center p-[15px] hover:rounded-full">
-                   <svg viewBox="0 0 24 24" height={31} width={31} aria-hidden="true" className="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk text-white"><g><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="white"></path></g></svg>
-              </div>
-               
+              <NavLink to={Icons[0].to} className="w-full h-full flex justify-end bch:justify-start"
+            >
+                   <div className="hover:bg-gray-600/30  flex justify-center items-center p-[15px] hover:rounded-full">
+                   <svg viewBox="0 0 24 24" height={31} width={31} aria-hidden="true" className="text-white"><g><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="white"></path></g></svg>
+                   </div>
+
+            </NavLink>   
             </div>
             {/* navigation options */}
             {
-                Icons.map((value,index)=> <SideCards name={value.name} key={index} path={value.path}/>)
+                Icons.map((value,index)=> <SideCards name={value.name} key={index} path1={value.path1} path2={value.path2} address={value.to}/>)
             }
             {/* post options */}
             <div className="w-full h-[50px] flex justify-end bch:justify-start pr-[6px] bch:pr-10 rounded-full">

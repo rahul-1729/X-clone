@@ -1,46 +1,42 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { NavLink } from 'react-router-dom'
+
+const pages=[
+   
+  {
+      name:"For you",
+      weblink:"/for_you"
+  },
+  {
+      name:"Following",
+      weblink:"/following"
+  }
+  
+   
+]
 
 function Stickyhome() {
-  const[flag ,setFlag]=useState(1);
-  const[one,setOne]=useState("border-b-4 font-medium border-sky-500 ");
-  const[two,setTwo]=useState("text-gray-500");
-
-  const handleOne =()=>{
-       if(flag!=1)
-       {
-          setFlag(1)
-          setOne("border-b-4 font-medium border-sky-500 ")
-          setTwo("text-gray-500")
-          
-       }
-       
-  }
-
-  const handleTwo =()=>{
-     
-    if(flag===1)
-    {
-      setFlag(2)
-      setOne("text-gray-500")
-      setTwo("border-b-4 font-medium border-sky-500 ")
-      
-    }
-    
-}
-  
+   
   return (
     <div className='w-full h-[60px] bg-black/70 shrink-0 sticky top-0 text-white backdrop-blur-lg border-b border-gray-800 flex justify-between '>
         
-         <div onClick={handleOne} className={`cursor-pointer flex w-full items-center justify-center hover:bg-white/10`}>
-             <div className={`h-full flex  items-center justify-center ${one}`}>
-                For you
-             </div>
-         </div>
-         <div  onClick={handleTwo} className={`cursor-pointer flex w-full items-center justify-center hover:bg-white/10`}>
-             <div className={`h-full flex  items-center justify-center ${two}`}>
-                Following
-             </div>
-         </div>
+    {
+      pages.map((values,index)=>
+        <div key ={index}  className={`cursor-pointer flex items-center flex-grow justify-center hover:bg-white/10`}>
+                
+                <NavLink to={values.weblink} className={({isActive})=>
+                    `text-gray-500 text-sans w-full h-full flex justify-center items-center`
+                   }>
+                    {
+                        ({isActive})=>(
+                            <div className={`h-full flex justify-center items-center ${isActive?"text-white font-medium border-b-4 border-sky-500":""}`}>{values.name}</div>
+                        )
+                    }
+                    
+                   </NavLink>
+        </div>
+       )
+    }
          
      
     </div>
