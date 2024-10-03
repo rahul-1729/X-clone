@@ -30,7 +30,7 @@ const pages=[
 
 function StickyExplore() {
   return (
-    <div className='w-full h-[60px] bg-black/70 shrink-0 sticky top-0 text-white backdrop-blur-lg border-b border-gray-800 flex justify-evenly '>
+    <div className='w-full h-[60px] shrink-0 text-white backdrop-blur-lg border-b border-gray-800 flex justify-evenly '>
         
         {
             pages.map((values,index)=>

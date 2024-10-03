@@ -6,6 +6,7 @@ import Unseenpostcount from './Unseenpostcount'
 import StickyExplore from './StickyExplore'
 import { BrowserRouter as Router} from 'react-router-dom'
 import StickyExploreSearch from './StickyExploreSearch'
+import WrapExplore from './WrapExplore'
 function Section2() {
   return (
     <>
@@ -14,9 +15,8 @@ function Section2() {
         <Stickyhome/>
       </Router> */}
        {/* explore section---------- */}
-       <Router>
-        <StickyExploreSearch/>
-        <StickyExplore/>
+       <Router> 
+       <WrapExplore/>
       </Router>
      
       <Inputpost/>
