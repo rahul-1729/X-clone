@@ -5,30 +5,23 @@ import { NavLink } from 'react-router-dom'
 const pages=[
    
     {
-        name:"For you",
-        weblink:"/for_you"
+        name:"All",
+        weblink:"/all"
     },
     {
-        name:"Trending",
-        weblink:"/trending"
+        name:"Verified",
+        weblink:"/verified"
     },
     {
-        name:"News",
-        weblink:"/news"
+        name:"Mentions",
+        weblink:"/mentions"
     },
-    {
-        name:"Sports",
-        weblink:"/sports"
-    },
-    {
-        name:"Entertainment",
-        weblink:"/entertainment"
-    },
+   
     
      
 ]
 
-function StickyExplore() {
+function Stickynotification() {
   return (
     <div className='w-full h-[60px] shrink-0 text-white bg-transparent border-b border-gray-800 flex justify-evenly '>
         
@@ -58,4 +51,4 @@ function StickyExplore() {
   )
 }
 
-export default StickyExplore
+export default Stickynotification

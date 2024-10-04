@@ -7,6 +7,10 @@ import StickyExplore from './StickyExplore'
 import { BrowserRouter as Router} from 'react-router-dom'
 import StickyExploreSearch from './StickyExploreSearch'
 import WrapExplore from './WrapExplore'
+import WrapNotification from './WrapNotification'
+import Wrapbookmark from './Wrapbookmark'
+import Profile from './profile/Profile'
+import Stickyprofile from './profile/Stickyprofile'
 function Section2() {
   return (
     <>
@@ -15,11 +19,26 @@ function Section2() {
         <Stickyhome/>
       </Router> */}
        {/* explore section---------- */}
-       <Router> 
+       {/* <Router> 
        <WrapExplore/>
+      </Router> */}
+
+      {/* <Router> 
+       <WrapNotification/>
+      </Router> */}
+
+     {/* <Router> 
+       <Wrapbookmark/>
+      </Router> */}
+      <Router>
+        <Stickyprofile/>
       </Router>
+      <Router>
+         <Profile/>
+      </Router>
+      
      
-      <Inputpost/>
+      {/* <Inputpost/>
       <Unseenpostcount count ={69}/>
       <Post/>
       <Post/>
@@ -36,7 +55,7 @@ function Section2() {
       <Post/>
       <Post/>
       <Post/>
-      <Post/>
+      <Post/> */}
 
      
      
