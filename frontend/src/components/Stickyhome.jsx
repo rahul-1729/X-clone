@@ -18,14 +18,14 @@ const pages=[
 function Stickyhome() {
    
   return (
-    <div className='w-full h-[60px] bg-black/70 shrink-0 sticky top-0 text-white backdrop-blur-lg border-b border-gray-800 flex justify-between '>
+    <div className='w-full h-[60px] bg-black/70 shrink-0 sticky top-0 text-white backdrop-blur-lg border-b border-zinc-500 flex justify-between '>
         
     {
       pages.map((values,index)=>
         <div key ={index}  className={`cursor-pointer flex items-center flex-grow justify-center hover:bg-white/10`}>
                 
                 <NavLink to={values.weblink} className={({isActive})=>
-                    `text-gray-500 text-sans w-full h-full flex justify-center items-center`
+                    `text-zinc-500 text-sans w-full h-full flex justify-center items-center`
                    }>
                     {
                         ({isActive})=>(

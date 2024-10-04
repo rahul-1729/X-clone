@@ -5,32 +5,36 @@ import { NavLink } from 'react-router-dom'
 const pages=[
    
     {
-        name:"For you",
-        weblink:"/for_you"
+        name:"Posts",
+        weblink:"/posts"
     },
     {
-        name:"Trending",
-        weblink:"/trending"
+        name:"Replies",
+        weblink:"/replies"
     },
     {
-        name:"News",
-        weblink:"/news"
+        name:"Highlights",
+        weblink:"/highlights"
     },
     {
-        name:"Sports",
-        weblink:"/sports"
+        name:"Articles",
+        weblink:"/articles"
     },
     {
-        name:"Entertainment",
-        weblink:"/entertainment"
+        name:"Media",
+        weblink:"/media"
+    },
+    {
+        name:"Likes",
+        weblink:"/likes"
     },
     
      
 ]
 
-function StickyExplore() {
+function Explore() {
   return (
-    <div className='w-full h-[60px] shrink-0 bg-transparent border-b border-zinc-500 flex justify-evenly '>
+    <div className='w-full h-[60px] shrink-0 bg-transparent border-b border-gray-800 flex justify-evenly '>
         
         {
             pages.map((values,index)=>
@@ -58,4 +62,4 @@ function StickyExplore() {
   )
 }
 
-export default StickyExplore
+export default Explore
