@@ -15,7 +15,7 @@ function App() {
        {/*Post + recommendation */}
        <div className='col-span-7 sm:col-span-6 bch:col-span-5 flex h-screen '>
              {/* Post */}
-             <div className='w-full sm:w-[600px] h-full    border-r border-l border-zinc-500 flex-col flex overflow-y-auto'>
+             <div className='w-full sm:w-[600px] h-full    border-r border-l border-zinc-700 flex-col flex overflow-y-auto'>
               
                <Section2/>
                

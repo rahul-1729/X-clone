@@ -3,7 +3,7 @@ import check from '../assets/shankarachaya.jpg'
 
 function Newstrend() {
   return (
-    <div className='w-full h-[110px] gap-2 flex items-center p-4 hover:bg-gray-900/40 '>
+    <div className='w-full h-[110px] gap-2 flex items-center p-4 hover:bg-zinc-900/40 '>
           <div className='w-[80px] h-[80px] bg-gray-700 shrink-0 rounded-xl flex items-center justify-center'>
             {/* insert image */}
                 <img className="h-full w-full rounded-xl object-cover"src={check} alt="" />

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Hashtrend() {
   return (
-    <div className='w-full h-[80px] shrink-0 flex hover:bg-gray-900/40 justify-between pl-4 pr-4'>
+    <div className='w-full h-[80px] shrink-0 flex hover:bg-zinc-900/40 justify-between pl-4 pr-4'>
           <div className='flex flex-col justify-center'>
               <h2 className='text-sm text-gray-500 font-snas '>Zonra . Trending</h2>
               <h2 className='text-md text-white font-snas font-semibold'>#HashTrending</h2>
