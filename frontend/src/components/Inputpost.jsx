@@ -36,8 +36,8 @@ function Inputpost() {
               
             const File = inputFiles.files[0];
             setVisual(inputFiles.files)
-            console.log(visual.length)
-            console.log(inputFiles.files)
+            // console.log(visual.length)
+            // console.log(inputFiles.files)
             const fileType = File.type
     
             if(fileType.startsWith('image/'))

@@ -3,7 +3,7 @@ import SideBar from './components/SideBar';
 import Section2 from './components/Section2';
 import Section3 from './components/Section3';
 import { BrowserRouter as Router } from 'react-router-dom';
-import Editprofile from './components/profile/Editprofile';
+import Editprofile from './components/profile/profileEdit/Editprofile';
 function App() {
   return (
     <>
@@ -34,7 +34,10 @@ function App() {
        </div>
        
     </div>
+    <Router>
     <Editprofile/>
+    </Router>
+    
     </>
   
   );

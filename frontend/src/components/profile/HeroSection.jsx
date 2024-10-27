@@ -11,7 +11,7 @@ function HeroSection() {
       <div className='w-full aspect-[3/1] relative'>
         {/* insert wallpaper image from database */}
         <img className="object-cover w-full h-full"src={wallpaper} alt="" />
-        <div className='absolute left-0 bottom-0 h-3/4 aspect-[1/1] rounded-full bg-yellow-300 center-origin translate-y-[50%]  translate-x-[10%]  border-[5px] border-black flex justify-center items-center'>
+        <div className='absolute left-0 bottom-0 h-3/4 aspect-[1/1] rounded-full bg-yellow-300 center-origin translate-y-[50%]  translate-x-[10%]  border-4 border-black flex justify-center items-center'>
         {/* insert user image from database */}
         <img className=" object-cover w-full h-full rounded-full"src={profile} alt="" />
         </div>
