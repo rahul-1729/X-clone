@@ -21,6 +21,7 @@ This project is a **frontend replica of Twitter**, designed to mimic the platfor
 ## Tech Stack
 - **React.js**: Framework for building the dynamic UI.
 - **Tailwind CSS**: Utility-first CSS framework for rapid and responsive styling.
+- **Redux**: State Management
 - **React Router**: For client-side routing and navigation.
 - **Axios**: For making API calls (when backend integration is added).
 - **Context API or Redux**: For managing state (if implemented).
